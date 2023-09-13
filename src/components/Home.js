@@ -19,9 +19,9 @@ function Home() {
 	return (
 		<Parallax pages={6}>
 			<ParallaxLayer
-				offset={-5}
-				speed={-0.5}
-				factor={4}
+				offset={0}
+				speed={1}
+				factor={8}
 				style={{
 					backgroundImage: `url(/blurred-1226286_1920.jpg)`,
 					backgroundSize: 'auto',
@@ -50,8 +50,8 @@ function Home() {
 				<div
 					style={{
 						position: 'fixed',
-						top: '47%',
-						right: '20%',
+						top: '60%',
+						right: '45%',
 						border: '1px solid black',
 						padding: '20px',
 						borderRadius: '8px',
@@ -77,8 +77,8 @@ function Home() {
 				<div
 					style={{
 						position: 'fixed',
-						top: '47%',
-						right: '20%',
+						top: '60%',
+						right: '45%',
 						border: '1px solid black',
 						padding: '20px',
 						borderRadius: '8px',
@@ -107,8 +107,8 @@ function Home() {
 				<div
 					style={{
 						position: 'fixed',
-						top: '47%',
-						right: '20%',
+						top: '60%',
+						right: '45%',
 						border: '1px solid black',
 						padding: '20px',
 						borderRadius: '8px',
@@ -135,8 +135,8 @@ function Home() {
 				<div
 					style={{
 						position: 'fixed',
-						top: '47%',
-						right: '15%',
+						top: '60%',
+						right: '45%',
 						border: '1px solid black',
 						padding: '20px',
 						borderRadius: '8px',
@@ -164,8 +164,8 @@ function Home() {
 				<div
 					style={{
 						position: 'fixed',
-						top: '47%',
-						right: '15%',
+						top: '60%',
+						right: '45%',
 						border: '1px solid black',
 						padding: '20px',
 						borderRadius: '8px',
@@ -191,7 +191,7 @@ function Home() {
 					style={{
 						color: 'white',
 						position: 'fixed',
-						top: '47%',
+						top: '40%',
 						right: '50%',
 						border: '1px solid black',
 						padding: '20px',

@@ -29,7 +29,7 @@ export const ScaleUp = ({ show, children }) => {
 	useEffect(() => {
 		api.start({
 			transform: show ? 'scale(1)' : 'scale(0)',
-			config: { duration: 1000 },
+			config: { tension: 90, friction: 8, mass: 2 },
 		});
 	}, [show, api]);
 
@@ -51,8 +51,8 @@ export const SlideDown = ({ show, children }) => {
 		api.start({
 			marginTop: show ? '0px' : '-700px',
 			config: {
-				tension: 50,
-				friction: 3,
+				tension: 180,
+				friction: 12,
 				mass: 1,
 			},
 		});
@@ -75,7 +75,7 @@ export const ColorChange = ({ show, children }) => {
 		api.start({
 			backgroundColor: show ? 'red' : 'lightgrey',
 			color: show ? 'white' : 'red',
-			config: { duration: 1000 },
+			config: { tension: 50, friction: 10, mass: 2 },
 		});
 	}, [show, api]);
 
@@ -88,7 +88,7 @@ export const ColorChange = ({ show, children }) => {
 
 export const RotateAndSlideIn = ({ show, children }) => {
 	const [{ transform, ...style }, api] = useSpring(() => ({
-		transform: 'rotate(0deg) translateX(300%)',
+		transform: 'rotate(0deg) translateX(780%)',
 		backgroundColor: 'lightgrey',
 		padding: '5px',
 		borderRadius: '10px',
@@ -99,11 +99,11 @@ export const RotateAndSlideIn = ({ show, children }) => {
 		api.start({
 			transform: show
 				? 'rotate(360deg) translateX(0%)'
-				: 'rotate(0deg) translateX(300%)',
+				: 'rotate(0deg) translateX(780%)',
 			config: {
-				tension: 40,
+				tension: 50,
 				friction: 10,
-				mass: 1,
+				mass: 2,
 				clamp: true,
 			},
 		});
